@@ -53,18 +53,6 @@ jobs:
             baseline: Ubuntu 22.04 / glibc 2.35
             linuxdeploy_sha256: c20cd71e3a4e3b80c3483cef793cda3f4e990aca14014d23c544ca3ce1270b4d
             linuxdeploy_qt_sha256: 15106be885c1c48a021198e7e1e9a48ce9d02a86dd0a1848f00bdbf3c1c92724
-          - arch: arm64
-            runner: ubuntu-24.04-arm
-            cmake_arch: default
-            boost_arch: arm
-            openssl_target: linux-aarch64
-            qt_host: linux_arm64
-            qt_arch: linux_gcc_arm64
-            appimage_arch: aarch64
-            elf_machine: AArch64
-            baseline: Ubuntu 24.04 / glibc 2.39
-            linuxdeploy_sha256: 620095110d693282b8ebeb244a95b5e911cf8f65f76c88b4b47d16ae6346fcff
-            linuxdeploy_qt_sha256: bf1c24aff6d749b5cf423afad6f15abd4440f81dec1aab95706b25f6667cdcf1
     env:
       DEPS_DIR: ${{ github.workspace }}/_deps-linux
       BUILD_DIR: ${{ github.workspace }}/build-linux
